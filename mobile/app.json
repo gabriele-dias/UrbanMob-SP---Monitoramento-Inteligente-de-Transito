@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "UrbanMob SP",
+    "slug": "urbanmob-sp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "br.com.urbanmobsp.mobile"
+    },
+    "plugins": [
+      "expo-status-bar"
+    ]
+  }
+}

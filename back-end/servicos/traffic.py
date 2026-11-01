@@ -1,8 +1,3 @@
-def obter_dados_trafego():
+from services.traffic import obter_dados_trafego, obter_trafego_regiao
 
-    return {
-        "cidade": "São Paulo",
-        "congestionamento": "Moderado",
-        "velocidade_media": 28,
-        "intensidade": "Normal"
-    }
+__all__ = ["obter_dados_trafego", "obter_trafego_regiao"]

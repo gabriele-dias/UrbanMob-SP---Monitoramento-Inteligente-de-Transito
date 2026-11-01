@@ -2,7 +2,6 @@ import requests
 from configuracao import Config
 
 def obter_dados_trafego():
-    print("CHAVE", Config.GOOGLE_API_KEY)
     origem = "-23.550520,-46.633308"
     destino = "-23.548943,-46.638818"
 
@@ -15,7 +14,7 @@ def obter_dados_trafego():
         "key": Config.GOOGLE_API_KEY
     }
 
-    resposta = requests.get(url, params=params)
+    resposta = requests.get(url, params=params, timeout=5)
 
     dados = resposta.json()
 
